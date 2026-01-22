@@ -17,7 +17,7 @@ def grade_response(e):
     document.getElementById("output2").innerHTML = ""
     grade = float(document.getElementById("input2").value)
 
-    if grade >= 95:
+    if 100 == grade >= 95:
         display(f'Bergamo 1', target="output2")
     elif 91 <= grade < 95:
         display(f'Bergamo 2', target="output2")
@@ -30,4 +30,5 @@ def grade_response(e):
     elif grade > 100:
         display(f'no it isnt', target="output2")
     else:
+
         display(f'failed', target="output2")
